@@ -10,6 +10,7 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+      <p>난 병신이다</p>
     </div>
   );
 }
