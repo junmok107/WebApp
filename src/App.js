@@ -10,7 +10,7 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
-      <p></p>
+      <p>jjj</p>
     </div>
   );
 }
