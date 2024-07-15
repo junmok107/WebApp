@@ -10,7 +10,6 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
-      <p>난 진짜 병신이다</p>
     </div>
   );
 }
