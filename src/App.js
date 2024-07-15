@@ -10,7 +10,10 @@ function App() {
       <Header />
       <MainContent />
       <Footer />
+<<<<<<< HEAD
       <p>jjj</p>
+=======
+>>>>>>> 52a719098504f0f46ac84ee1d7fdae5bf9385771
     </div>
   );
 }
