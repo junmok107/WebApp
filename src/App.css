@@ -1,18 +1,23 @@
+/* 기본 설정 */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
 }
 
+/* 앱 레이아웃 */
 .App {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
+/* 헤더 스타일 */
 header {
-  background-color: #282c34;
+  background-color: #4a4a4a;
   text-align: center;
   padding: 20px;
   color: white;
@@ -23,38 +28,64 @@ header h1 {
   padding: 15px;
 }
 
+/* 네비게이션 스타일 */
 nav ul {
   list-style-type: none;
   padding: 0;
+  display: flex;
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin-right: 10px;
+  margin: 0 10px;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
+nav ul li a:hover {
+  color: #b0bec5;
+}
+
+/* 메인 콘텐츠 스타일 */
 main {
   flex: 1;
   padding: 20px;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 1200px;
 }
 
+/* 푸터 스타일 */
 footer {
-  background-color: #282c34;
+  background-color: #4a4a4a;
   color: white;
   text-align: center;
   padding: 10px 0;
 }
+
+/* 텍스트 영역 스타일 */
 textarea {
   resize: none;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
 }
 
+/* 선택 그룹 스타일 */
 .select {
   padding: 15px 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .class_n {
@@ -63,6 +94,7 @@ textarea {
   margin-right: 10px;
 }
 
+/* 라디오 버튼 스타일 */
 .select input[type=radio] {
   display: none;
 }
@@ -72,30 +104,40 @@ textarea {
   cursor: pointer;
   height: 32px;
   width: 120px;
-  border: 1px solid #333;
+  border: 1px solid #4a4a4a;
+  border-radius: 4px;
   line-height: 32px;
   text-align: center;
   font-weight: bold;
   font-size: 16px;
   margin-right: 10px;
-}
-
-.select input[type=radio] + label {
   background-color: #fff;
-  color: #333;
+  color: #4a4a4a;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .select input[type=radio]:checked + label {
-  background-color: #333;
+  background-color: #4a4a4a;
   color: #fff;
 }
 
-.radio-group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+/* 버튼 스타일 */
+button {
+  padding: 15px 20px;
+  font-size: 18px;
+  background-color: #4a4a4a;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
+button:hover {
+  background-color: #616161;
+}
+
+/* 미디어 쿼리 */
 @media (max-width: 600px) {
   .select {
     padding: 10px 5px;
@@ -122,7 +164,7 @@ textarea {
 
   button {
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
+    padding: 15px;
+    font-size: 18px;
   }
 }
