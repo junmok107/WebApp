@@ -17,7 +17,7 @@ body {
 
 /* 헤더 스타일 */
 header {
-  background-color: #4a4a4a;
+  background-color: #a8dadc;
   text-align: center;
   padding: 20px;
   color: white;
@@ -48,7 +48,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #b0bec5;
+  color: #457b9d;
 }
 
 /* 메인 콘텐츠 스타일 */
@@ -58,26 +58,26 @@ main {
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 20px auto;
-  max-width: 1200px;
+  max-width: 800px;
+  border-radius: 8px;
 }
 
-/* 푸터 스타일 */
-footer {
-  background-color: #4a4a4a;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-}
-
-/* 텍스트 영역 스타일 */
-textarea {
-  resize: none;
+/* 입력 필드 스타일 */
+input[type="text"], textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
   margin-bottom: 10px;
+}
+
+/* 푸터 스타일 */
+footer {
+  background-color: #a8dadc;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
 }
 
 /* 선택 그룹 스타일 */
@@ -104,7 +104,7 @@ textarea {
   cursor: pointer;
   height: 32px;
   width: 120px;
-  border: 1px solid #4a4a4a;
+  border: 1px solid #457b9d;
   border-radius: 4px;
   line-height: 32px;
   text-align: center;
@@ -112,20 +112,20 @@ textarea {
   font-size: 16px;
   margin-right: 10px;
   background-color: #fff;
-  color: #4a4a4a;
+  color: #457b9d;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .select input[type=radio]:checked + label {
-  background-color: #4a4a4a;
+  background-color: #457b9d;
   color: #fff;
 }
 
 /* 버튼 스타일 */
 button {
-  padding: 15px 20px;
-  font-size: 18px;
-  background-color: #4a4a4a;
+  padding: 12px 18px; /* 버튼 크기 줄이기 */
+  font-size: 16px;
+  background-color: #457b9d;
   color: white;
   border: none;
   border-radius: 4px;
@@ -134,7 +134,7 @@ button {
 }
 
 button:hover {
-  background-color: #616161;
+  background-color: #1d3557;
 }
 
 /* 미디어 쿼리 */
@@ -164,7 +164,7 @@ button:hover {
 
   button {
     width: 100%;
-    padding: 15px;
-    font-size: 18px;
+    padding: 12px;
+    font-size: 16px;
   }
 }
