@@ -19,7 +19,7 @@ body {
 header {
   background-color: #a8dadc;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   color: white;
 }
 
@@ -56,10 +56,6 @@ main {
   flex: 1;
   padding: 20px;
   background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin: 20px auto;
-  max-width: 800px;
-  border-radius: 8px;
 }
 
 /* 입력 필드 스타일 */
@@ -137,8 +133,12 @@ button:hover {
   background-color: #1d3557;
 }
 
+textarea {
+  resize: none;
+}
+
 /* 미디어 쿼리 */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   .select {
     padding: 10px 5px;
   }
